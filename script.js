@@ -1,7 +1,15 @@
 
 var peso = 100;
-var altura = 2.0;
+var altura = 2;
 
-var imc = peso / (altura * altura);
+var DiferenteZero = (altura =! 0);
 
-console.log(imc);
+if(DiferenteZero)
+{
+    var imc = peso / (altura * altura);
+    console.log(imc);
+}
+else
+{
+    console.log("Informações Incorretas");
+}
